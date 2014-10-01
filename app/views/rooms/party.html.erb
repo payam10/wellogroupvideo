@@ -3,7 +3,7 @@
 	<div id="invitation"><i>Share the url of this page by emailing it to your friends!</i></div>
 		<% @url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
 
-		<a class="title" href="mailto:?subject=Let's workout!&body= Hi, I just joined a room on wello! <%=@url%>">Email to a friend</a>
+		<a id="email_button" class="title btn btn-success" href="mailto:?subject=Let's workout!&body= Hi, I just joined a room on wello! <%=@url%>">Email to a friend</a>
 		
 		<div id="videobox">
 		</div>
@@ -72,4 +72,5 @@
 	        session.subscribe(streams[i], div.id);
 	      }
 	    }
+
 </script>

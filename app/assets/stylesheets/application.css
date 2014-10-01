@@ -114,3 +114,29 @@ html {
 	/*color: #4099FF;*/
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
+div.OT_video-container { 
+	border-right: solid #32CD32 5px;
+}
+
+#email_button {
+	margin-bottom: 2%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 480px) {
+	/*h1#home_title { color: blue;}*/
+	input#room_name { width: 95%; }
+
+	#left { width: 100%; }
+	#right { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+	/*h1#home_title { color: blue;}*/
+	/*input#room_name { width: 95%; }*/
+
+	#left { width: 100%; }
+	#right { width: 100%; }
+}

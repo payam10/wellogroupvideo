@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*GRID */
+
+ .grid_1 { width: 6.5%; }
+ .grid_2 { width: 15%; }
+ .grid_3 { width: 23.5%; } 
+ .grid_4 { width: 32%; } 
+ .grid_5 { width: 40.5%; } 
+ .grid_6 { width: 49%; } 
+ .grid_7 { width: 55.5%; } 
+ .grid_8 { width: 66%; } 
+ .grid_9 { width: 74.5%; } 
+ .grid_10 { width: 83%; } 
+ .grid_11 { width: 91.5%; }
+ .grid_12 { width: 100%; } 
+
+ .grid_1,
+ .grid_2,
+ .grid_3,
+ .grid_4,
+ .grid_5,
+ .grid_6,
+ .grid_7,
+ .grid_8,
+ .grid_9,
+ .grid_10,
+ .grid_11,
+ .grid_12 {
+ 	margin: 1% 2% 1% 0;  
+ 	/*this is not letting me use margin 0 auto must disable in order to use*/
+ 	float: left;
+ 	display: block;
+ }
+
+ .alpha{margin-left:0;}
+ .omega{margin-right:0;}
+
+ .container{
+ 	width: 100%; 
+ 	/*max-width: 1500px;*/
+ 	margin: auto;	
+ 	background-image: url('http://www.bombayroomyoga.com/wp-content/uploads/2013/11/WHAT-IS-YOGA-PAGE.jpg');
+ 	background-size: 100%;
+ }
+
+ .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+/*CHANGES*/
+ 
+h3 {
+	padding-left: 4%;
+}

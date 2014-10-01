@@ -14,7 +14,7 @@ class RoomsController < ApplicationController
 
   	# took out respond
   	if @new_room.save 
-  		redirect_to("/wello/room/"+@new_room.id.to_s)
+  		redirect_to("/room/"+@new_room.id.to_s)
   	else
   		redirect_to root_path
   	end
@@ -23,9 +23,7 @@ class RoomsController < ApplicationController
   def party
     @rooms = Room.order('created_at DESC')
   	@room = Room.find(params[:id])
-  	# binding.pry
   	@tok_token = @opentok.generate_token @room.sessionId 
-  	# binding.pry 
   end
 
   private

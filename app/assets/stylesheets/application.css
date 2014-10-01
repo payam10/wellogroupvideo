@@ -54,8 +54,10 @@
  	width: 100%; 
  	/*max-width: 1500px;*/
  	margin: auto;	
- 	background-image: url('http://www.bombayroomyoga.com/wp-content/uploads/2013/11/WHAT-IS-YOGA-PAGE.jpg');
- 	background-size: 100%;
+ 	background: none;
+ 	/*background-image: url('gymroom.jpg') no-repeat; background-position:fixed;*/
+ 	/*background-size: 100%;*/
+ 	/*background-repeat: repeat-x;*/
  }
 
  .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
@@ -64,4 +66,51 @@
  
 h3 {
 	padding-left: 4%;
+}
+
+input#room_name {
+	opacity: 0.9;
+}
+
+#create_btn input	{
+	color: white;
+	background-color: #4099FF;
+	padding: 1%;
+	border: none;
+	opacity: 0.9;
+}
+
+#create_btn input:hover	{
+	color: #4099FF;
+	background-color: white;
+	padding: 1%;
+	border: none;
+	opacity: 0.9;
+}
+
+#list {
+	opacity: 0.9;
+}
+
+.title {
+	color: #4099FF;
+}
+
+img { 
+	width: auto;
+	max-width: 100%;
+	background-repeat: none;
+}
+
+html { 
+  background: url('gymroom.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home_title {
+	/*color: #4099FF;*/
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }

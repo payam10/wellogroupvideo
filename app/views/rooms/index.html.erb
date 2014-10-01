@@ -1,15 +1,15 @@
-<h1>Create a new fitness room</h1>
+<h1 id="home_title">Create a new fitness room</h1>
 
-<div class="panel panel-default">
-	<div class="panel-body">
+<!-- <div class="panel panel-default"> -->
+	<!-- <div class="panel-body"> -->
 		<%= form_for @new_room do |f| %>
-			<div class="panel-heading">
-				<h2>Group name: <%= f.text_field :name %></h2>
-				<div id="create_btn"><%=f.submit :class => "btn btn-default" %></div>
-			</div>
+			<!-- <div class="panel-heading"> -->
+				<h2 class="title">Room name: <%= f.text_field :name %></h2>
+				<div id="create_btn"><%=f.submit%></div>
+			<!-- </div> -->
 		<% end %>
-  </div>
-</div>
+  <!-- </div> -->
+<!-- </div> -->
 
 
 

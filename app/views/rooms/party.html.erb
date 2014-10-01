@@ -1,23 +1,23 @@
 <div id="view">
 	<div id="left" class="grid_5">
-	<div id="invitation">Share the url of this page by emailing it to your friends!</div>
+	<div id="invitation"><i>Share the url of this page by emailing it to your friends!</i></div>
 		<% @url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
 
-		<a href="mailto:?subject=Let's workout!&body= Hi, I just joined a room on wello! <%=@url%>">Email to a friend</a>
+		<a class="title" href="mailto:?subject=Let's workout!&body= Hi, I just joined a room on wello! <%=@url%>">Email to a friend</a>
 		
 		<div id="videobox">
 		</div>
 	</div>
 
 	<div id="right" class="grid_5">
-		<div class="panel panel-default">
+		<div id="list" class="panel panel-info">
 			<h3>Previously created rooms</h3>
 
 			<% @rooms.each do |room| %>
 				<ul class="list-group">
 					<% @time = room.created_at.to_s %>
 					<% @id = room.id %>
-					<li class="list-group-item"><b>Name:</b> <%=room.name %><br><b>Created:</b> <%=@time.slice(0..9) %></li>
+					<li class="list-group-item"><b class="title">Name:</b> <%=room.name %><br><b class="title">Created:</b> <%=@time.slice(0..9) %></li>
 				</ul>
 			<% end %>
 		</div>
@@ -58,12 +58,12 @@
 
 	    function subscribeToStreams(streams) {
 	      for (var i = 0; i < streams.length; i++) {
-	        // Make sure we don't subscribe to ourself
+	        // So we don't subscribe to ourself
 	        if (streams[i].connection.connectionId == session.connection.connectionId) {
 	          return;
 	        }
 
-	        // Create the div to put the subscriber element in to
+	        // Div to put the subscriber element in to
 	        var div = document.createElement('div');
 	        div.setAttribute('id', 'stream' + streams[i].streamId);
 	        document.body.appendChild(div);
